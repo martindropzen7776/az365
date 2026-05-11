@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Azar365 | Casino Online</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- ========================= -->
+<!--       META PIXEL SIMPLE  -->
+<!-- REEMPLAZÁ PIXEL_ID       -->
+<!-- ========================= -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod ?
+n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+};
+
+if(!f._fbq)f._fbq=n;
+
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"
+/>
+</noscript>
+
+<style>
+
+:root{
+  --orange:#ff6b00;
+  --orange2:#ff8c1a;
+  --bg:#050505;
+  --card:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.08);
+  --text:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#000;
+  color:white;
+  overflow-x:hidden;
+}
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(255,107,0,.25), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255,140,26,.18), transparent 40%),
+    #050505;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url('fondo.png') center/cover no-repeat;
+  opacity:.18;
+}
+
+.container{
+  width:100%;
+  max-width:720px;
+  position:relative;
+  z-index:2;
+}
+
+.logo{
+  width:240px;
+  display:block;
+  margin:0 auto 25px;
+  filter:drop-shadow(0 0 25px rgba(255,107,0,.35));
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  backdrop-filter:blur(12px);
+  border-radius:28px;
+  padding:38px 28px;
+  text-align:center;
+  box-shadow:0 0 50px rgba(0,0,0,.5);
+}
+
+h1{
+  font-size:48px;
+  font-weight:900;
+  line-height:1.05;
+  margin-bottom:18px;
+}
+
+.orange{
+  color:var(--orange);
+}
+
+.sub{
+  font-size:18px;
+  color:#ddd;
+  line-height:1.5;
+  margin-bottom:28px;
+}
+
+.cta{
+  display:inline-block;
+  padding:18px 34px;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--orange),var(--orange2));
+  color:white;
+  text-decoration:none;
+  font-weight:800;
+  font-size:20px;
+  box-shadow:0 0 30px rgba(255,107,0,.45);
+  transition:.25s;
+}
+
+.cta:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 0 40px rgba(255,107,0,.6);
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:32px;
+}
+
+.feature{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.06);
+  padding:18px 12px;
+  border-radius:18px;
+}
+
+.feature strong{
+  display:block;
+  margin-top:8px;
+  font-size:15px;
+}
+
+.games{
+  margin-top:40px;
+}
+
+.games h2{
+  text-align:center;
+  margin-bottom:18px;
+  font-size:28px;
+}
+
+.carousel{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.carousel img{
+  width:100%;
+  border-radius:16px;
+  aspect-ratio:16/10;
+  object-fit:cover;
+}
+
+.testimonials{
+  margin-top:40px;
+}
+
+.testimonials h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.chat{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.06);
+  padding:16px;
+  border-radius:20px;
+  margin-bottom:16px;
+}
+
+.msg{
+  padding:12px 14px;
+  border-radius:16px;
+  margin-top:10px;
+  max-width:85%;
+}
+
+.staff{
+  background:#1a1a1a;
+}
+
+.user{
+  background:linear-gradient(135deg,var(--orange),var(--orange2));
+  margin-left:auto;
+}
+
+footer{
+  text-align:center;
+  margin-top:28px;
+  opacity:.7;
+  font-size:13px;
+}
+
+@media(max-width:700px){
+
+  .logo{
+    width:190px;
+  }
+
+  h1{
+    font-size:34px;
+  }
+
+  .sub{
+    font-size:15px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .carousel{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+  }
+
+  .carousel img{
+    min-width:75%;
+    scroll-snap-align:center;
+  }
+
+  .cta{
+    width:100%;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<!-- ========================= -->
+<!--       TU LOGO            -->
+<!-- ========================= -->
+
+<img src="logo-azar365.png" class="logo" alt="Azar365">
+
+<div class="card">
+
+<h1>
+🔥 LA MEJOR <span class="orange">PLATAFORMA</span>
+</h1>
+
+<p class="sub">
+Registrate en Azar365 y recibí promociones exclusivas, retiros inmediatos y atención personalizada las 24 horas.
+</p>
+
+<!-- ========================= -->
+<!--     BOTON WHATSAPP       -->
+<!-- CAMBIAR NUMERO           -->
+<!-- ========================= -->
+
+<a
+href="https://azar365.com/es/popup/registration"
+target="_blank"
+class="cta"
+>
+👉 QUIERO MI BONO
+</a>
+
+<div class="features">
+
+<div class="feature">
+💸
+<strong>Retiros al instante</strong>
+</div>
+
+<div class="feature">
+🎁
+<strong>Bonos diarios</strong>
+</div>
+
+<div class="feature">
+📲
+<strong>Atención 24/7</strong>
+</div>
+
+</div>
+
+</div>
+
+<div class="games">
+
+<h2>🎮 Juegos más populares</h2>
+
+<div class="carousel">
+
+<img src="1.png">
+<img src="2.png">
+<img src="3.png">
+<img src="4.png">
+<img src="5.png">
+<img src="6.png">
+
+</div>
+
+</div>
+
+<div class="testimonials">
+
+<h2>🗣️ Opiniones reales</h2>
+
+<div class="chat">
+
+<div class="msg staff">
+Hola Nico 👋 ¿cómo fue tu experiencia?
+</div>
+
+<div class="msg user">
+Excelente. Deposité y jugué al instante 🔥
+</div>
+
+</div>
+
+<div class="chat">
+
+<div class="msg staff">
+¿Pudiste retirar rápido?
+</div>
+
+<div class="msg user">
+Sí, me acreditaron enseguida 💸
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© Azar365 — Todos los derechos reservados
+</footer>
+
+</div>
+
+</section>
+
+</body>
+</html>
