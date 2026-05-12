@@ -12,13 +12,13 @@
 
 <!-- ========================= -->
 <!--       META PIXEL SIMPLE  -->
-<!-- REEMPLAZÁ PIXEL_ID       -->
 <!-- ========================= -->
 
 <script>
 !function(f,b,e,v,n,t,s)
 {
 if(f.fbq)return;
+
 n=f.fbq=function(){
 n.callMethod ?
 n.callMethod.apply(n,arguments) : n.queue.push(arguments)
@@ -43,6 +43,7 @@ s.parentNode.insertBefore(t,s)
 
 fbq('init', '886673116403448');
 fbq('track', 'PageView');
+
 </script>
 
 <noscript>
@@ -50,7 +51,7 @@ fbq('track', 'PageView');
 height="1"
 width="1"
 style="display:none"
-src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=886673116403448&ev=PageView&noscript=1"
 />
 </noscript>
 
@@ -286,10 +287,6 @@ footer{
 
 <div class="container">
 
-<!-- ========================= -->
-<!--       TU LOGO            -->
-<!-- ========================= -->
-
 <img src="logo.png" class="logo" alt="Azar365">
 
 <div class="card">
@@ -303,14 +300,14 @@ Registrate en Azar365 y recibí promociones exclusivas, retiros inmediatos y ate
 </p>
 
 <!-- ========================= -->
-<!--     BOTON WHATSAPP       -->
-<!-- CAMBIAR NUMERO           -->
+<!--      BOTON + EVENTO      -->
 <!-- ========================= -->
 
 <a
 href="https://azar365.com/es/popup/registration"
 target="_blank"
 class="cta"
+onclick="fbq('track', 'Lead');"
 >
 👉 QUIERO MI BONO
 </a>
